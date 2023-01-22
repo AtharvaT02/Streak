@@ -35,7 +35,6 @@ class DNSRecordViewSet(viewsets.ModelViewSet):
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
     def retrieve(self, request, *args, **kwargs):
-        print("HERE")
         try:
             domain_name = kwargs.get('domain')
             dns_record = DNSRecord.objects.get(domain_name=domain_name)
