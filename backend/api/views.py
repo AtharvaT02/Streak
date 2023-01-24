@@ -1,18 +1,3 @@
-# from django.forms.models import model_to_dict
-# from dns.models import DNSRecord
-# from rest_framework.decorators import api_view
-# from rest_framework.response import Response
-# from dns.serializers import DNSRecordSerializer
-
-# @api_view(['GET'])
-# def home(request, *args, **kwargs):
-#     instance = DNSRecord.objects.all().order_by('?').first()
-#     data = {}
-#     if instance:
-#         data = DNSRecordSerializer(instance).data
-#         # data = model_to_dict(dnsRecords)
-#     return Response(data)
-    
 
 from rest_framework import viewsets
 from dns.models import DNSRecord
